@@ -1,8 +1,8 @@
 export default function Home() {
   return (
-    <div>
+    <div className="h-screen overflow-auto">
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        a4a
+        overflow
       </header>
 
       <div>
