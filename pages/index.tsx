@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div>
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        a4
+        a4a
       </header>
 
       <div>
@@ -20,7 +20,42 @@ export default function Home() {
       <div>
         <input className="bg-black w-full auto-expand-textarea resize-none chat-input flex-1 font-[400] text-[16px] p-6 outline-none text-white caret-[#FF6500] flex items-center"></input>
       </div>
-
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+        mollitia iusto neque similique hic magnam? Vitae nobis magnam
+        consequuntur, ratione tempora enim quo minus distinctio, nostrum minima,
+        aut perspiciatis.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est ab
+        suscipit. Et, dignissimos. Eos tenetur magnam vel quos minima tempore
+        asperiores dolorum possimus ratione fuga! Et in earum illo?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+        mollitia iusto neque similique hic magnam? Vitae nobis magnam
+        consequuntur, ratione tempora enim quo minus distinctio, nostrum minima,
+        aut perspiciatis.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est ab
+        suscipit. Et, dignissimos. Eos tenetur magnam vel quos minima tempore
+        asperiores dolorum possimus ratione fuga! Et in earum illo?
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit ipsum
+        mollitia iusto neque similique hic magnam? Vitae nobis magnam
+        consequuntur, ratione tempora enim quo minus distinctio, nostrum minima,
+        aut perspiciatis.
+      </div>
+      <div>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. A est ab
+        suscipit. Et, dignissimos. Eos tenetur magnam vel quos minima tempore
+        asperiores dolorum possimus ratione fuga! Et in earum illo?
+      </div>
+      <div>
+        <input className="bg-black w-full auto-expand-textarea resize-none chat-input flex-1 font-[400] text-[16px] p-6 outline-none text-white caret-[#FF6500] flex items-center"></input>
+      </div>
       <div>
         {Array.from({ length: 40 }, (_, i) => (
           <div key={i}>
