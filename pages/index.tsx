@@ -2,7 +2,7 @@ export default function Home() {
   return (
     <div>
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        a
+        a4
       </header>
 
       <div>
@@ -22,7 +22,7 @@ export default function Home() {
       </div>
 
       <div>
-        {Array.from({ length: 20 }, (_, i) => (
+        {Array.from({ length: 40 }, (_, i) => (
           <div key={i}>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Veritatis
             ea dolor a nam fugiat neque sunt, esse, deleniti et minima rem
