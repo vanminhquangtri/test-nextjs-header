@@ -9,9 +9,9 @@ export default function Home() {
     document.body.classList.remove("overflow-hidden");
   };
   return (
-    <div className="h-screen overflow-auto">
+    <div className="h-screen">
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        5
+        overflow-auto
       </header>
 
       {Array.from({ length: 3 }, (_, i) => (
