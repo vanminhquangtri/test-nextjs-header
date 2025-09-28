@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <div className="h-screen">
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        overflow-auto
+        aaa
       </header>
 
       {Array.from({ length: 3 }, (_, i) => (
@@ -23,7 +23,11 @@ export default function Home() {
       ))}
 
       <div>
-        <input className="bg-black w-full auto-expand-textarea resize-none chat-input flex-1 font-[400] text-[16px] p-6 outline-none text-white caret-[#FF6500] flex items-center"></input>
+        <input
+          onBlur={handleBlur}
+          onFocus={handleFocus}
+          className="bg-black w-full auto-expand-textarea resize-none chat-input flex-1 font-[400] text-[16px] p-6 outline-none text-white caret-[#FF6500] flex items-center"
+        ></input>
       </div>
       {Array.from({ length: 5 }, (_, i) => (
         <div key={i}>
