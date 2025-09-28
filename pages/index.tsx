@@ -28,9 +28,9 @@ export default function Home() {
     allowTouchScroll();
   };
   return (
-    <div className={`h-screen ${isFocus ? "overflow-hidden" : ""}`}>
+    <div className={`${isFocus ? "overflow-hidden" : ""}`}>
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        allowTouchScroll
+        hidden
       </header>
 
       {Array.from({ length: 3 }, (_, i) => (
