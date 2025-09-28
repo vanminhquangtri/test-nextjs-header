@@ -1,17 +1,36 @@
-import { useRef } from "react";
+import { useRef, useState } from "react";
 
 export default function Home() {
   const inputRef = useRef<HTMLInputElement>(null);
+  const [isFocus, setIsFocus] = useState(false);
+
+  function blockTouchScroll() {
+    document.addEventListener("touchmove", preventScroll, { passive: false });
+  }
+
+  function allowTouchScroll() {
+    document.removeEventListener("touchmove", preventScroll);
+  }
+
+  // eslint-disable-next-line @typescript-eslint/no-explicit-any
+  function preventScroll(event: any) {
+    event.preventDefault();
+  }
+
   const handleFocus = () => {
     document.body.classList.add("overflow-hidden");
+    setIsFocus(true);
+    blockTouchScroll();
   };
   const handleBlur = () => {
     document.body.classList.remove("overflow-hidden");
+    setIsFocus(false);
+    allowTouchScroll();
   };
   return (
-    <div className="h-screen">
+    <div className={`h-screen ${isFocus ? "overflow-hidden" : ""}`}>
       <header className="fixed w-full left-0 top-0 h-[80px] z-[10] flex flex-col justify-center duration-800 bg-red-800 text-white font-bold text-[18px] header">
-        aaa
+        allowTouchScroll
       </header>
 
       {Array.from({ length: 3 }, (_, i) => (
